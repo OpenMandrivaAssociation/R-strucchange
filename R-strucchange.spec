@@ -1,28 +1,27 @@
-%bcond_without bootstrap
+%bcond_with bootstrap
 %global packname  strucchange
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
 Version:          1.4_6
-Release:          1
+Release:          2
 Summary:          Testing, Monitoring, and Dating Structural Changes
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.4-6.tar.gz
-Requires:         R-graphics R-stats R-zoo R-sandwich 
-Requires:         R-graphics R-stats 
+Requires:         R-graphics R-stats R-zoo R-sandwich R-graphics R-stats 
 %if %{with bootstrap}
 Requires:         R-lmtest R-car R-e1071 R-tseries R-foreach 
 %else
 Requires:         R-lmtest R-car R-dynlm R-e1071 R-tseries R-foreach 
 %endif
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-graphics R-stats R-zoo R-sandwich
-BuildRequires:    R-graphics R-stats 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-graphics
+BuildRequires:    R-stats R-zoo R-sandwich R-graphics R-stats
 %if %{with bootstrap}
-BuildRequires:    R-lmtest R-car R-e1071 R-tseries R-foreach 
+BuildRequires:    R-lmtest R-car R-e1071 R-tseries R-foreach
 %else
-BuildRequires:    R-lmtest R-car R-dynlm R-e1071 R-tseries R-foreach 
+BuildRequires:    R-lmtest R-car R-dynlm R-e1071 R-tseries R-foreach
 %endif
 
 %description
