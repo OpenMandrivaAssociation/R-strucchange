@@ -3,13 +3,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.4_7
+Version:          1.4.7
 Release:          1
 Summary:          Testing, Monitoring, and Dating Structural Changes
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.4-7.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/strucchange_1.4-7.tar.gz
 Requires:         R-graphics R-stats R-zoo R-sandwich R-graphics R-stats 
 Requires:         R-lmtest R-car R-e1071 R-tseries R-foreach 
 %if %{without bootstrap}
@@ -63,3 +63,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/demo
 %{rlibdir}/%{packname}/help
+
