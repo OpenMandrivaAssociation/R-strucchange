@@ -4,7 +4,7 @@
 
 Name:             R-%{packname}
 Version:          1.4_7
-Release:          1
+Release:          2
 Summary:          Testing, Monitoring, and Dating Structural Changes
 Group:            Sciences/Mathematics
 License:          GPL-2
