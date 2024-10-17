@@ -8,7 +8,7 @@ Release:          2
 Summary:          Testing, Monitoring, and Dating Structural Changes
 Group:            Sciences/Mathematics
 License:          GPL-2
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.4-7.tar.gz
 Requires:         R-graphics R-stats R-zoo R-sandwich R-graphics R-stats 
 Requires:         R-lmtest R-car R-e1071 R-tseries R-foreach 
